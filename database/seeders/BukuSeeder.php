@@ -12,7 +12,7 @@ class BukuSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = \Faker\Factory::create();
+        $faker = \Faker\Factory::create('id_ID');
         for ($i= 0; $i < 10; $i++){
             \App\Models\Buku::create([
                 'user_id' => 1,

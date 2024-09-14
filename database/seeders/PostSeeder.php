@@ -12,7 +12,7 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = \Faker\Factory::create();
+        $faker = \Faker\Factory::create('id_ID');
         for ($i= 0; $i < 10; $i++){
             \App\Models\Post::create([
             'user_id' => $faker->numberBetween(1, 10),
